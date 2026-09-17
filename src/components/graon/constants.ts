@@ -46,7 +46,7 @@ export const DIFFERENTIALS = [
 export const FAQ = [
   ["A consultoria atende unidades de qual porte?", "O escopo é dimensionado conforme capacidade, fluxo e complexidade operacional. Atendemos produtores estruturados, cerealistas, cooperativas, indústrias e tradings."],
   ["Como funciona o serviço de cubagem?", "A equipe realiza a medição in loco, registra a geometria e processa o desenho em software. O resultado apoia a atualização do estoque físico na data do levantamento."],
-  ["Vocês atendem fora do Rio Grande do Sul?", "Sim. A área principal de atuação abrange Rio Grande do Sul, Santa Catarina e Paraná. Outras localidades são avaliadas conforme escopo e agenda técnica."],
+  ["Vocês atendem em todo o Brasil?", "Sim. Atendemos produtores, cooperativas e unidades armazenadoras em todo o território nacional, com diagnósticos técnicos presenciais in loco e acompanhamento remoto contínuo."],
   ["As capacitações são presenciais ou online?", "Podem ser presenciais ou online, conforme o conteúdo e a necessidade da equipe. Treinamentos operacionais que dependem da instalação são priorizados no local."],
   ["Como é feito o primeiro diagnóstico?", "Começamos pelo contexto da unidade, dados disponíveis e principais desvios percebidos. A visita técnica e o plano de trabalho são definidos após esse levantamento inicial."],
 ] as const;
