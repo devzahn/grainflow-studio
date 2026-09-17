@@ -1,24 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+import { GraonSite } from "@/components/graon/GraonSite";
+import { CONTACT } from "@/components/graon/constants";
+const title="GRÃON Pós-Colheita | Consultoria em armazenagem de grãos em Erechim/RS";
+const description="Consultoria técnica em recebimento, secagem, aeração, armazenagem e expedição de grãos. Diagnóstico, qualidade, cubagem e capacitação no Sul do Brasil.";
+export const Route=createFileRoute("/")({head:()=>({meta:[{title},{name:"description",content:description},{property:"og:title",content:title},{property:"og:description",content:description},{property:"og:type",content:"website"},{property:"og:url",content:"/"},{property:"og:image",content:"https://id-preview--03605e26-7515-448f-8ccb-d1746f37acdb.lovable.app/og-graon.jpg"},{name:"twitter:card",content:"summary_large_image"},{name:"twitter:image",content:"https://id-preview--03605e26-7515-448f-8ccb-d1746f37acdb.lovable.app/og-graon.jpg"}],links:[{rel:"canonical",href:"/"}],scripts:[{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"LocalBusiness",name:"GRÃON Pós-Colheita",description,address:{"@type":"PostalAddress",streetAddress:"Rua Silveira Martins, 334",postalCode:"99700-092",addressLocality:"Erechim",addressRegion:"RS",addressCountry:"BR"},telephone:CONTACT.phones[0],email:CONTACT.email,areaServed:["Rio Grande do Sul","Santa Catarina","Paraná"]})}]}),component:GraonSite});
