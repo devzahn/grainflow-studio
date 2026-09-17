@@ -1,0 +1,6 @@
+import { forwardRef, type ButtonHTMLAttributes, type AnchorHTMLAttributes } from "react";
+import { cn } from "@/lib/utils";
+const styles={primary:"bg-brand-orange text-brand-deep border-brand-orange hover:bg-brand-orange-soft hover:border-brand-orange-soft",outline:"border-brand-line text-surface hover:border-brand-orange hover:text-brand-orange",dark:"bg-brand-deep text-surface border-brand-deep hover:bg-brand-teal",ghost:"border-transparent text-surface hover:text-brand-orange"};
+const base="inline-flex min-h-11 items-center justify-center gap-2 border px-5 py-3 text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-brand-orange/45 disabled:pointer-events-none disabled:opacity-50 [clip-path:polygon(0_0,calc(100%-10px)_0,100%_10px,100%_100%,0_100%)]";
+export const Button=forwardRef<HTMLButtonElement,ButtonHTMLAttributes<HTMLButtonElement>&{variant?:keyof typeof styles}>(({className,variant="primary",...p},ref)=><button ref={ref} className={cn(base,styles[variant],className)} {...p}/>);Button.displayName="Button";
+export function ButtonLink({className,variant="primary",...p}:AnchorHTMLAttributes<HTMLAnchorElement>&{variant?:keyof typeof styles}){return <a className={cn(base,styles[variant],className)} {...p}/>}
