@@ -1,47 +1,13 @@
 import { cn } from "@/lib/utils";
 
-export function GraonLogoMark({ className = "size-10", ...props }: React.ComponentPropsWithoutRef<"svg">) {
+export function GraonLogoMark({ className = "size-10", ...props }: React.ComponentPropsWithoutRef<"img">) {
   return (
-    <svg
-      viewBox="0 0 100 135"
-      fill="none"
-      aria-hidden="true"
-      className={className}
+    <img
+      src="/favicon.svg"
+      alt="GRÃON"
+      className={cn("size-10 object-contain", className)}
       {...props}
-    >
-      {/* 1. Telhado Hexagonal Superior (Chevron) */}
-      <path
-        d="M50 4 L82 21 V44 L70 44 L50 32 L30 44 L18 44 V21 Z"
-        fill="currentColor"
-      />
-
-      {/* 2. Torre / Arco do Silo */}
-      <path
-        d="M50 38 L72 49 V66 H62 V56 L50 47 L38 56 V66 H28 V49 Z"
-        fill="currentColor"
-      />
-
-      {/* 3. Arco Superior Circular */}
-      <path
-        d="M21 64 A42 42 0 0 1 79 64"
-        stroke="currentColor"
-        strokeWidth="5"
-        strokeLinecap="round"
-        fill="none"
-      />
-
-      {/* 4. Anel Principal / Corpo do Silo */}
-      <path
-        d="M36 71 A38 38 0 1 0 64 71"
-        stroke="currentColor"
-        strokeWidth="13"
-        strokeLinecap="round"
-        fill="none"
-      />
-
-      {/* 5. Pino Central / Chute */}
-      <rect x="44" y="50" width="12" height="40" rx="6" fill="currentColor" />
-    </svg>
+    />
   );
 }
 
