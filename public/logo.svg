@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" fill="none">
+  <!-- Defs para gradiente suave ou cor sólida -->
+  <defs>
+    <linearGradient id="graon-orange-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="graon-teal-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E5B73"/>
+      <stop offset="100%" stop-color="#073644"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Top Chevron (Telhado / Capô Hexagonal Superior) -->
+  <path d="M50 8 L84 25 V48 L72 48 L50 36 L28 48 L16 48 V25 Z" fill="currentColor"/>
+
+  <!-- 2. Peaked Hood / Collar (Arco da Torre) -->
+  <path d="M50 44 L72 55 V72 H62 V60 L50 52 L38 60 V72 H28 V55 Z" fill="currentColor"/>
+
+  <!-- 3. Arco Superior Circular (Abertura do Silo) -->
+  <path d="M20 70 A42 42 0 0 1 80 70" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- 4. Anel Principal / Corpo do Silo (Símbolo de Energia / Abertura Superior) -->
+  <path d="M37 77 A38 38 0 1 0 63 77" stroke="currentColor" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+  <!-- 5. Pino Central / Chute de Grãos / Indicador de Nível -->
+  <rect x="43" y="55" width="14" height="42" rx="7" fill="currentColor"/>
+</svg>
